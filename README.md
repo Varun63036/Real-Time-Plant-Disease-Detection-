@@ -1,2 +1,3 @@
-# Real-Time-Plant-Disease-Detection-
-Deep Learning-based Plant Disease Detection using CNN (~93.78% accuracy), deployed as a real-time web app with Flask/Streamlit.
+🌱 Plant Disease Detection App
+
+This project is a web application built with Flask and Deep Learning (CNN) to detect plant diseases from leaf images. The app provides an easy-to-use interface where users can upload a leaf image and get the predicted disease name.
