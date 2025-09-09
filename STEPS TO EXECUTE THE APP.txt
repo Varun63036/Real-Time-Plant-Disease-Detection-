@@ -1,0 +1,7 @@
+C:\Users\sunit>D:\Major\PlantDiseaseApp\
+'D:\Major\PlantDiseaseApp\' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\sunit>cd /d D:\Major\PlantDiseaseApp
+
+D:\Major\PlantDiseaseApp>python app.py

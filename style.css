@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.main-container {
+  margin-left: 270px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-container h1 {
+  font-size: 40px;
+  color: black;
+}
+
+.upload-card {
+  background-color: white;
+  padding: 30px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.upload-card input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.upload-card button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.upload-card button:hover {
+  background-color: #3e8e41;
+}
+
+.result-body {
+  background: url('output-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.result-box {
+  background-color: rgba(76, 175, 80, 0.9);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.result-box a {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: #4CAF50;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}

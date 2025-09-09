@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plant Leaf Disease Detection</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      https://images.unsplash.com/photo-1611080626919-e1e24b0976d3?auto=format&fit=crop&w=1470&q=80
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .sidebar h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    .sidebar p {
+      margin: 8px 0;
+      font-size: 15px;
+    }
+
+    .main-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .upload-card {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      color: #000;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    input[type="file"] {
+      margin-top: 10px;
+      font-size: 14px;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+
+      .main-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Bell Pepper</h2>
+    <p>Healthy</p>
+    <p>Bacterial Spot</p>
+
+    <h2>Potato</h2>
+    <p>Healthy</p>
+    <p>Early Blight</p>
+    <p>Late Blight</p>
+
+    <h2>Tomato</h2>
+    <p>Healthy</p>
+    <p>Early Blight</p>
+    <p>Late Blight</p>
+    <p>Leaf Mold</p>
+    <p>Septoria Leaf Spot</p>
+  </div>
+
+  <div class="main-container">
+    <h1>Plant Leaf Disease Detection</h1>
+    <div class="upload-card">
+      <form action="/" method="POST" enctype="multipart/form-data">
+        <label for="image">Upload Leaf Image:</label><br><br>
+        <input type="file" name="file" id="image" required><br><br>
+        <button type="submit">Detect Disease</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
